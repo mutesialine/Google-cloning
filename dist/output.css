@@ -619,6 +619,10 @@ video {
   margin-top: 6rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -807,6 +811,10 @@ video {
   width: 1rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .max-w-\[272px\] {
   max-width: 272px;
 }
@@ -950,6 +958,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pr-16 {
   padding-right: 4rem;
 }
@@ -1060,6 +1073,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-blue-800 {
