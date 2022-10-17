@@ -5,20 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
-<body>
+
+<body class="flex flex-col h-screen">
   <!-- header -->
-  <div class="hidden lg:flex justify-end items-center gap-6  pr-16 py-10  text-2xl w-full">
-    <a href="" class="hover:text-blue-800 hover:underline">Gmail</a>
-    <a  class="hover:text-blue-800 hover:underline">images</a>
+ <div>
+  <div class="hidden lg:flex justify-end items-center gap-6  pr-16 py-10  text-sm w-full">
+    <a href="" class="hover:text-black hover:underline">Gmail</a>
+    <a class="hover:text-black hover:underline">images</a>
     <img class="w-6" src="../img/dots-menu.png" alt="">
-    <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-      class="w-6 h-6">
+    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" class="w-10">
       <path stroke-linecap="round" stroke-linejoin="round"
         d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
     </svg>
   </div>
-  <div class="flex lg:hidden justify-between px-10 pt-8 pb-20 text-sm ">
+  <div class="flex lg:hidden justify-between  text-gray-500 px-10 pt-8 pb-20 text-sm ">
     <div class="flex gap-4 items-center">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="w-6 h-6">
@@ -36,10 +42,12 @@
       </svg>
     </div>
   </div>
-  <!-- body -->
-  <div class="flex  flex-col   min-h-[536px] items-center gap-6 ">
-    <img class="w-48 lg:w-64"src="../img/googlelogo_color_272x92dp.png" alt="">
-    <div class=" w-[90%] lg:w-[60%] flex  items-center pt-1 pl-4 pr-2 rounded-full border-2 hover:shadow-md hover:border-none">
+ </div>
+  <!-- main -->
+  <div class="flex  flex-col items-center gap-6 ">
+    <img class="w-48 lg:w-64" src="../img/googlelogo_color_272x92dp.png" alt="">
+    <div
+      class=" w-[90%] lg:w-[40%] flex  items-center pt-1 pl-4 pr-2 rounded-full border-2 hover:shadow-md hover:border-none">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round"
@@ -52,7 +60,7 @@
       <p class="bg-gray-50 p-4 rounded-lg hover:border-2 ">Google search</p>
       <p class="bg-gray-50 p-4 rounded-lg hover:border-2 ">I'm Feeling Luck</p>
     </div>
-    <div class="flex  justify-center px-4 mt-6  gap-4 text-sm lg:text-lg">
+    <div class="flex  justify-center px-4   gap-4 text-sm lg:text-lg">
       <p>Google offered in:</p>
       <a href="" class="text-blue-800 hover:text-blue-800 hover:underline">Français</a>
       <a href="" class="text-blue-800  hover:text-blue-800 hover:underline">Kiswahili</a>
@@ -60,9 +68,9 @@
     </div>
   </div>
   <!-- footer -->
-  <div class=" bg-[#f2f2f2] flex flex-col w-full  px-12 py-4 gap-6 text-[#70757a] divide-y-2 ">
-    <div class="text-base">Rwanda</div>
-    <div class=" hidden lg:flex justify-between w- pt-4 text-xs lg:text-sm">
+  <div class="mt-auto bg-[#f2f2f2] flex flex-col px-12 py-4 gap-6 text-gray-400 divide-y-2 ">
+    <div class="text-base text-gray-400">Rwanda</div>
+    <div class=" hidden lg:flex justify-between  pt-4 text-xs lg:text-sm ">
       <div class="flex gap-6 ">
         <a href="" class="hover: text-gray-500  hover:underline">About</a>
         <a href="" class="hover: text-gray-500  hover:underline">Advertising</a>
@@ -76,7 +84,7 @@
       </div>
 
     </div>
-    <div class="flex flex-col lg:hidden justify-between gap-4 text-center   pt-4 text-sm">
+    <div class="flex flex-col items-center lg:hidden gap-4   border-gray-400  pt-4 text-sm">
       <div class="flex gap-4">
         <a href="" class="hover: text-gray-500  hover:underline">Dark Theme off:</a>
         <a href="" class="hover: text-gray-500  hover:underline">Settings</a>
@@ -88,7 +96,7 @@
         <a href="" class="hover: text-gray-500  hover:underline">Business</a>
         <a href="" class="hover: text-gray-500  hover:underline">About</a>
       </div>
-    
+
     </div>
   </div>
 </body>
