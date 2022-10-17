@@ -11,18 +11,24 @@
     rel="stylesheet">
 </head>
 
-<body class="flex flex-col h-screen">
+<body class="flex flex-col h-screen justify-between">
   <!-- header -->
- <div>
-  <div class="hidden lg:flex justify-end items-center gap-6  pr-16 py-10  text-sm w-full">
-    <a href="" class="hover:text-black hover:underline">Gmail</a>
-    <a class="hover:text-black hover:underline">images</a>
-    <img class="w-6" src="../img/dots-menu.png" alt="">
-    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-      stroke="currentColor" class="w-10">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-    </svg>
+  <div class="hidden lg:flex justify-end items-center gap-3 p-2 text-sm w-full">
+    <div class="flex gap-2">
+      <a href="" class="hover:text-black hover:underline">Gmail</a>
+      <a class="hover:text-black hover:underline">images</a>
+    </div>
+    <div class="p-2 hover:rounded-full hover:bg-gray-200">
+      <img class=" w-4 h-4" src="./img/dots-menu.png" alt="">
+    </div>
+     <div class="p-2 hover:rounded-full hover:bg-gray-200">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-6">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+     </div>
+    
   </div>
   <div class="flex lg:hidden justify-between  text-gray-500 px-10 pt-8 pb-20 text-sm ">
     <div class="flex gap-4 items-center">
@@ -34,7 +40,7 @@
       <a href class="hover:text-blue-800 hover:underline">IMAGES</a>
     </div>
     <div class="flex gap-4 items-center">
-      <img class="w-4" src="../img/dots-menu.png" alt="">
+      <img class="w-4" src="./img/dots-menu.png" alt="">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round"
@@ -42,23 +48,23 @@
       </svg>
     </div>
   </div>
- </div>
+ 
   <!-- main -->
-  <div class="flex  flex-col items-center gap-6 ">
-    <img class="w-48 lg:w-64" src="../img/googlelogo_color_272x92dp.png" alt="">
+  <div class=" grow flex  flex-col items-center gap-6 ">
+    <img class="w-48 lg:w-64" src="./img/googlelogo_color_272x92dp.png" alt="">
     <div
-      class=" w-[90%] lg:w-[40%] flex  items-center pt-1 pl-4 pr-2 rounded-full border-2 hover:shadow-md hover:border-none">
+      class=" w-[90%] lg:w-[40%] flex  items-center pt-1 pl-4 pr-2 rounded-full border hover:shadow-md hover:border-none">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round"
           d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
       </svg>
       <input class=" w-full  outline-none pl-2" type="text" placeholder="">
-      <img class=" w-10 object-cover" src="../img/7123011_google_mic_icon.svg" alt="">
+      <img class=" w-10 object-cover" src="./img/7123011_google_mic_icon.svg" alt="">
     </div>
     <div class=" hidden lg:flex gap-6 ">
-      <p class="bg-gray-50 p-4 rounded-lg hover:border-2 ">Google search</p>
-      <p class="bg-gray-50 p-4 rounded-lg hover:border-2 ">I'm Feeling Luck</p>
+      <p class="bg-gray-50 px-4 py-3 outline-none rounded-lg hover:border">Google search</p>
+      <p class="bg-gray-50 px-4 py-3 rounded-lg hover:border">I'm Feeling Luck</p>
     </div>
     <div class="flex  justify-center px-4   gap-4 text-sm lg:text-lg">
       <p>Google offered in:</p>
@@ -69,8 +75,8 @@
   </div>
   <!-- footer -->
   <div class="mt-auto bg-[#f2f2f2] flex flex-col px-12 py-4 gap-6 text-gray-400 divide-y-2 ">
-    <div class="text-base text-gray-400">Rwanda</div>
-    <div class=" hidden lg:flex justify-between  pt-4 text-xs lg:text-sm ">
+    <div class="text-base text-gray-700">Rwanda</div>
+    <div class=" hidden lg:flex justify-between  pt-4 ">
       <div class="flex gap-6 ">
         <a href="" class="hover: text-gray-500  hover:underline">About</a>
         <a href="" class="hover: text-gray-500  hover:underline">Advertising</a>
