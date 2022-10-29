@@ -5,89 +5,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+    <title>Google clone</title>
 </head>
 
-<body class="flex flex-col h-screen justify-between">
+<body class="flex flex-col h-screen justify-between text-primary">
   <!-- header -->
-  <div class="hidden lg:flex justify-end items-center gap-3 p-2  w-full">
-    <div class="flex gap-2 text-sm">
-      <a href="#" class="hover:text-black hover:underline">Gmail</a>
-      <a class="hover:text-black hover:underline">images</a>
+  <div class="hidden lg:flex justify-end items-center gap-3 p-2  max-w-full">
+    <div class="flex gap-3 text-thirteen">
+      <a href="#" class="hover:text-black hover:underline cursor-pointer">Gmail</a>
+      <a href='#'class="hover:text-black hover:underline ">images</a>
     </div>
-    <div class="p-2 hover:rounded-full hover:bg-gray-200">
-      <img class=" w-4 h-4" src="./img/dots-menu.png" alt="dots menu icon">
+    <div class="p-3 hover:rounded-full hover:bg-light-gray cursor-pointer">
+      <img class=" w-4 h-4 " src="./img/dots-menu.png" alt="dots menu icon">
     </div>
-    <div class="p-2 hover:rounded-full hover:bg-gray-200">
+    <div class="p-1 hover:rounded-full hover:bg-light-gray cursor-pointer">
      <img class="w-8 h-8 rounded-full" src="./img/profile.jpg" alt="profile image">
     </div>
 
   </div>
-  <div class="flex lg:hidden justify-between items-center  text-gray-500  pt-5 pr-8  pl-10 text-sm ">
+  <div class="flex lg:hidden justify-between items-center  text-gray-500  pt-4 pr-6  pl-8 text-xs font-bold">
     <div class="flex gap-4 ">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="w-6 h-6">
+        class="w-6 h-6 ">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
       <a href class="text-blue-600 pb-2 border-b-2 border-blue-600 ">ALL</a>
-      <a href class="hover:text-gray-400 hover:underline">IMAGES</a>
+      <a href class="hover:text-gray-400 hover:underline ">IMAGES</a>
     </div>
-    <div class="flex gap-4 items-center">
+    <div class="flex gap-4  justify-center items-center">
       <img class="w-4" src="./img/dots-menu.png" alt="dot munu icon">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>
+      <img class="w-8 h-8 rounded-full" src="./img/profile.jpg" alt="profile image">
     </div>
   </div>
 
   <!-- main -->
   <div class=" flex flex-col my-16 lg:mt-0 justify-center items-center gap-6  text-sm leading-7">
     <img class="w-40 lg:w-72" src="./img/googlelogo_color_272x92dp.png" alt=" google logo">
-    <div class=" w-4/5 lg:w-1/2 flex  items-center py-1 pl-4 pr-2 rounded-full border  hover:shadow-main-shadow ">
+    <div class=" w-nigthy-percent md:w-4/5 lg:w-1/2 xl:max-w-fourty-eigt flex  items-center py-0.5 pl-4 pr-2 rounded-full border  hover:shadow-main-shadow ">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="w-6 h-6">
+        class="w-6 h-6 text-gray-400">
         <path stroke-linecap="round" stroke-linejoin="round"
           d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
       </svg>
       <input class=" w-full  outline-none pl-2" type="text" placeholder="">
       <img class=" w-10 object-cover" src="./img/7123011_google_mic_icon.svg" alt="">
     </div>
-    <div class=" hidden lg:flex gap-6  ">
-      <p class="bg-gray-50 px-4 hover:border-gray-200 border-transparent py-3  rounded-lg border">Google search</p>
-      <p class="bg-gray-50 px-4 py-3  hover:border-gray-200 rounded-lg border border-transparent">I'm Feeling Luck</p>
+    <div class=" hidden lg:flex gap-6 text-fifteen">
+      <button class="bg-gray-50 px-4 p-1  hover:border-gray-200 border  border-transparent  rounded hover:shadow-sm">Google search</button>
+      <button class="bg-gray-50 px-4 p-1 hover:border-gray-200 rounded border border-transparent hover:shadow-sm">I'm Feeling Lucky</button>
     </div>
-    <div class="flex  gap-2 lg:gap-4 px-2  text-sm ">
-      <p>Google offered in:</p>
-      <a href="#" class="text-blue-800 hover:text-blue-800 hover:underline">Français</a>
-      <a href="#" class="text-blue-800  hover:text-blue-800 hover:underline">Kiswahili</a>
-      <a href="#" class="text-blue-800  hover:text-blue-800 hover:underline">Ikinyarwanda</a>
+    <div class="flex flex-wrap  justify-center gap-3 px-4 text-thirteen  ">
+      <div>Google offered in:</div>
+      <ul class="flex gap-4">
+        <li  class="text-blue-600 lg:text-dark-blue hover:text-dark-blue hover:underline "><a href="#">Français</a></li>
+        <li class=" text-blue-600 lg:text-dark-blue hover:text-dark-blue hover:underline"><a href="#">Kiswahili</a></li>
+        <li class=" text-blue-600 lg:text-dark-blue hover:text-dark-blue hover:underline"><a href="#">Ikinyarwanda</a></li>
+      </ul>
     </div>
+    
   </div>
   <!-- footer -->
-  <div class="mt-auto bg-light-gray flex flex-col py-2 gap-3 lg:gap-6 text-gray-400  ">
-    <div class="text-base  text-gray-500 px-12 ">Rwanda</div>
+  <div class="mt-auto bg-light-gray flex flex-col  gap-3 lg:gap-2 text-gray-400  ">
+    <div class="text-fifteen  py-3 border-b-2 border-gray-200 text-[#70757a] px-6 lg:px-10 ">Rwanda</div>
     
-    <div class=" hidden lg:flex justify-between border-t border-gray-300  pt-4 px-12 text-sm   leading-7 ">
-      <div class="flex gap-6  ">
+    <div class=" hidden lg:flex justify-between items-center  py-3 px-10 text-sm text-middle-gray ">
+      <div class="flex justify-between items-center gap-7  ">
         <a href="#" class="hover: text-gray-500 hover:underline">About</a>
         <a href="#" class="hover: text-gray-500  hover:underline">Advertising</a>
         <a href="#" class="hover: text-gray-500  hover:underline">Business</a>
         <a href="#" class="hover: text-gray-500  hover:underline">How search works</a>
       </div>
-      <div class="flex gap-6">
+      <div class="flex items-center gap-7">
         <a href="#" class="hover: text-gray-500  hover:underline">Privacy</a>
         <a href="#" class="hover: text-gray-500  hover:underline">Terms</a>
         <a href="#" class="hover: text-gray-500  hover:underline">Settings</a>
       </div>
     </div>
-    <div class="  border-y  border-gray-300 py-5 lg:hidden"></div>
-    <div class="flex flex-col  py-4 lg:hidden gap-4   ">
-      <div class="flex justify-between  px-4">
+    <div class=" lg:hidden flex flex-col border-t-2 mt-8 py-2 text-middle-gray border-gray-200 gap-4 text-thirteen  ">
+      <div class="flex justify-center gap-4  px-3">
         <a href="#" class="hover:text-gray-500  hover:underline">Dark Theme off:</a>
         <a href="#" class="hover:text-gray-500  hover:underline">Settings</a>
         <a href="#" class="hover:text-gray-500  hover:underline">Privacy</a>
